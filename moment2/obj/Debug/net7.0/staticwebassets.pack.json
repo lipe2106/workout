@@ -5,8 +5,16 @@
       "PackagePath": "staticwebassets\\moment2.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\Lina\\Desktop\\webbutveckling\\.NET\\moment2\\moment2\\wwwroot\\add.png",
+      "PackagePath": "staticwebassets\\add.png"
+    },
+    {
       "Id": "C:\\Users\\Lina\\Desktop\\webbutveckling\\.NET\\moment2\\moment2\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\Lina\\Desktop\\webbutveckling\\.NET\\moment2\\moment2\\wwwroot\\done.png",
+      "PackagePath": "staticwebassets\\done.png"
     },
     {
       "Id": "C:\\Users\\Lina\\Desktop\\webbutveckling\\.NET\\moment2\\moment2\\wwwroot\\favicon.ico",
@@ -15,6 +23,10 @@
     {
       "Id": "C:\\Users\\Lina\\Desktop\\webbutveckling\\.NET\\moment2\\moment2\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\Lina\\Desktop\\webbutveckling\\.NET\\moment2\\moment2\\wwwroot\\logo.png",
+      "PackagePath": "staticwebassets\\logo.png"
     },
     {
       "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.moment2.props",

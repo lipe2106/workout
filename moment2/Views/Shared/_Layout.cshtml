@@ -3,12 +3,17 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - moment2</title>
+    <title>@ViewData["Title"] - Moment 2</title>
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
 </head>
 <body>
     <header>
-        <h1>Träningsdagbok - Moment 2</h1>
+        <div class="header-container">
+            <a asp-controller="Home" asp-action="Index">
+                <img src="~/logo.png" alt="logo" />
+                <h1>Träningsdagboken</h1>
+            </a>
+        </div>
         <partial name="~/Views/Shared/_NavMenu.cshtml" /> <!--Menu added as partial-->
     </header>
     <div class="container">

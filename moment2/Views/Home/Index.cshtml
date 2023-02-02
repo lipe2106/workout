@@ -3,8 +3,22 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4">Träningsdagbok</h1>
-    @ViewBag.message
+    <h2 class="display-4">Välkommen</h2>
+    <p>Välkommen till Träningsdagboken! Här kan du hålla kolla på dina avklarade träningspass</p>
+    <div class="option-container">
+        <a asp-controller="Home" asp-action="Workout">
+            <div class="options">
+                <img src="~/add.png" />
+                <p>Lägg till avklarat träningspass</p>
+            </div>
+        </a>
+        <a asp-controller="Home" asp-action="Result">
+            <div class="options">
+                <img src="~/done.png" />
+                <p>Se dina tränade pass</p>
+            </div>
+        </a>
+    </div>
 </div>
 
 <p>Hur många gånger vill du träna?</p>

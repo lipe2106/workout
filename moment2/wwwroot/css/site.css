@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: black;
+}
+
+.header-container {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    align-items: center;
+    padding-left: 5%;
+    background-color:darkcyan;
+}
+
+.header-container:hover {
+    cursor: pointer;
+    color: lightgray;
+}
+
+h1 {
+    font-size: 4em;
+}
+
+nav {
+    position: absolute;
+    top: 3%;
+    right: 0;
+    width: 20%;
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    margin-left: 5%;
+    font-size: 1em;
+}
+
+nav a:hover {
+    color: lightgray;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    margin-top: 5%;
+    background-color: white;
+    padding: 5%;
+}
+
+h2 {
+    margin-bottom: 2%;
+}
+
+.option-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.options {
+    text-align: center;
+    border: 1px solid black;
+    width: 80%;
+    margin: auto;
+    padding-top: 10%;
+    margin: 5%;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px dimgray;
+}
+
+.options:hover {
+    background-color: lightgray;
+    color: lightgray;
+}
+
+.options img {
+    height: 50px;
+    width: 50px;
+    margin-bottom: 10%;
+}
+
+.options p {
+    background-color: darkcyan;
+    width: 100%;
+    padding: 5%;
+    margin-bottom: 0%;
+}
+
+.container a {
+    text-decoration: none;
+    color: black;
+}

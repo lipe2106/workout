@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "6nCrnvOsx95fwZCy5qCqcW0J0JHwhsKLVKPHOgwTUkE=",
+  "Hash": "tFEHZp8PZUxe8h+5QkMsn9k3qK2X1pZAkxtwnRjzGXw=",
   "Source": "moment2",
   "BasePath": "_content/moment2",
   "Mode": "Default",
@@ -51,6 +51,23 @@
       "OriginalItemSpec": "C:\\Users\\Lina\\Desktop\\webbutveckling\\.NET\\moment2\\moment2\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\moment2.bundle.scp.css"
     },
     {
+      "Identity": "C:\\Users\\Lina\\Desktop\\webbutveckling\\.NET\\moment2\\moment2\\wwwroot\\add.png",
+      "SourceId": "moment2",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Lina\\Desktop\\webbutveckling\\.NET\\moment2\\moment2\\wwwroot\\",
+      "BasePath": "_content/moment2",
+      "RelativePath": "add.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\add.png"
+    },
+    {
       "Identity": "C:\\Users\\Lina\\Desktop\\webbutveckling\\.NET\\moment2\\moment2\\wwwroot\\css\\site.css",
       "SourceId": "moment2",
       "SourceType": "Discovered",
@@ -66,6 +83,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
+    },
+    {
+      "Identity": "C:\\Users\\Lina\\Desktop\\webbutveckling\\.NET\\moment2\\moment2\\wwwroot\\done.png",
+      "SourceId": "moment2",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Lina\\Desktop\\webbutveckling\\.NET\\moment2\\moment2\\wwwroot\\",
+      "BasePath": "_content/moment2",
+      "RelativePath": "done.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\done.png"
     },
     {
       "Identity": "C:\\Users\\Lina\\Desktop\\webbutveckling\\.NET\\moment2\\moment2\\wwwroot\\favicon.ico",
@@ -100,6 +134,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\site.js"
+    },
+    {
+      "Identity": "C:\\Users\\Lina\\Desktop\\webbutveckling\\.NET\\moment2\\moment2\\wwwroot\\logo.png",
+      "SourceId": "moment2",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Lina\\Desktop\\webbutveckling\\.NET\\moment2\\moment2\\wwwroot\\",
+      "BasePath": "_content/moment2",
+      "RelativePath": "logo.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\logo.png"
     }
   ]
 }

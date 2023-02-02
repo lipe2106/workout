@@ -22,9 +22,6 @@ namespace moment2.Controllers
         [Route("/startsida")]
         public IActionResult Index()
         {
-            // Use of ViewBag to send info to index
-            ViewBag.message = "Välkommen till Träningsdagboken! Här kan du hålla kolla på dina avklarade träningspass";
-
             return View();
         }
 

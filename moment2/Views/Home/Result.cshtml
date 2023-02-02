@@ -5,13 +5,14 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4">Tränade pass</h1>
+    <h2 class="display-4">Tränade pass</h2>
     <article>
         @foreach(var workout in Model)
         {
-            <h2>@workout.Type [@workout.Feel]</h2>
-            <h3>@workout.Date.ToString("yyyy/MM/dd")  - @workout.Duration minuter</h3>
+            <h3>@workout.Date.ToString("yyyy/MM/dd")</h3>
+            <h4>@workout.Type [@workout.Duration minuter]</h4>
             <p>@workout.Description</p>
+            <h5>Kändes @workout.Feel</h5>
             amount++;
         }
     </article>
