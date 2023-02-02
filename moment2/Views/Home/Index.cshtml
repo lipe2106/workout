@@ -1,0 +1,16 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Träningsdagbok</h1>
+    @ViewBag.message
+</div>
+
+<p>Hur många gånger vill du träna?</p>
+<form method="post">
+    <input type="number" name="amount" />
+    <input type="submit" value="Sätt mål" />
+</form>
+
+<p>@ViewBag.sessionContent</p>

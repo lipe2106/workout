@@ -1,0 +1,42 @@
+﻿@model moment2.Models.WorkoutModel;
+@{
+    ViewData["Title"] = "Workout";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Lägg till träning</h1>
+    <p>Här ska ett formulär finnas</p>
+    <form method="post">
+        <label asp-for="Type"></label>
+            <br />
+        <select asp-for="Type">
+            <option value="Styrketräning">Styrketräning</option>
+            <option value="Konditionsträning">Konditionsträning</option>
+            <option value="Annat">Annat</option>
+        </select>
+        <span asp-validation-for="Type"></span>
+        <br /><br />
+        <label asp-for="Description"></label>
+            <br />
+        <input type="text" asp-for="Description" />
+        <span asp-validation-for="Description"></span>
+        <br /><br />
+        <label asp-for="Duration"></label>
+        <input type="number" asp-for="Duration" /> minuter
+        <span asp-validation-for="Duration"></span>
+        <br /><br />
+        <label asp-for="Date"></label>
+        <input type="date" asp-for="Date" />
+        <span asp-validation-for="Date"></span>
+        <br /><br />
+        <label asp-for="Feel"></label>
+            <br />
+        <input type="radio" asp-for="Feel" value="Utmärkt" /> Utmärkt
+        <input type="radio" asp-for="Feel" value="Bra" /> Bra
+        <input type="radio" asp-for="Feel" value="Sådär" /> Sådär
+        <input type="radio" asp-for="Feel" value="Inte bra alls" /> Inte bra alls
+        <span asp-validation-for="Feel"></span>
+            <br /><br />
+        <input type="submit" value="Lägg till träning" />
+    </form>
+</div>

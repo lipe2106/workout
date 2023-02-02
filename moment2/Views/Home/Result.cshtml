@@ -1,0 +1,19 @@
+﻿@model List<moment2.Models.WorkoutModel>
+@{
+    ViewData["Title"] = "Result";
+    int amount = 0;
+}
+
+<div class="text-center">
+    <h1 class="display-4">Tränade pass</h1>
+    <article>
+        @foreach(var workout in Model)
+        {
+            <h2>@workout.Type [@workout.Feel]</h2>
+            <h3>@workout.Date.ToString("yyyy/MM/dd")  - @workout.Duration minuter</h3>
+            <p>@workout.Description</p>
+            amount++;
+        }
+    </article>
+    <p>@ViewBag.sessionContent Du har tränat @amount gånger. Bra jobbat!</p>
+</div>
