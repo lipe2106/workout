@@ -3,12 +3,11 @@
     ViewData["Title"] = "Workout";
 }
 
-<div class="text-center">
-    <h2 class="display-4">Lägg till träning</h2>
-    <p>Här ska ett formulär finnas</p>
+<section class="workout">
+    <h2>Lägg till träning</h2>
     <form method="post">
         <label asp-for="Type"></label>
-            <br />
+        <br />
         <select asp-for="Type">
             <option value="Styrketräning">Styrketräning</option>
             <option value="Konditionsträning">Konditionsträning</option>
@@ -17,26 +16,28 @@
         <span asp-validation-for="Type"></span>
         <br /><br />
         <label asp-for="Description"></label>
-            <br />
-        <input type="text" asp-for="Description" />
+        <br />
+        <input type="text" asp-for="Description" class="input" />
         <span asp-validation-for="Description"></span>
         <br /><br />
         <label asp-for="Duration"></label>
-        <input type="number" asp-for="Duration" /> minuter
+        <br />
+        <input type="number" asp-for="Duration" class="input" /> minuter
         <span asp-validation-for="Duration"></span>
         <br /><br />
         <label asp-for="Date"></label>
-        <input type="date" asp-for="Date" />
+        <br />
+        <input type="date" asp-for="Date" class="input" />
         <span asp-validation-for="Date"></span>
         <br /><br />
         <label asp-for="Feel"></label>
-            <br />
+        <br />
         <input type="radio" asp-for="Feel" value="Utmärkt" /> Utmärkt
         <input type="radio" asp-for="Feel" value="Bra" /> Bra
         <input type="radio" asp-for="Feel" value="Sådär" /> Sådär
         <input type="radio" asp-for="Feel" value="Inte bra alls" /> Inte bra alls
         <span asp-validation-for="Feel"></span>
-            <br /><br />
-        <input type="submit" value="Lägg till träning" />
+        <br /><br />
+        <input type="submit" value="Lägg till träning" class="btn" />
     </form>
-</div>
+</section>

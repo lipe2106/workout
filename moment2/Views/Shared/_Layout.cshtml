@@ -9,10 +9,8 @@
 <body>
     <header>
         <div class="header-container">
-            <a asp-controller="Home" asp-action="Index">
-                <img src="~/logo.png" alt="logo" />
-                <h1>Träningsdagboken</h1>
-            </a>
+             <a asp-controller="Home" asp-action="Index"><img src="~/logo.png" alt="logo" /></a>
+             <h1>Träningsdagboken</h1>
         </div>
         <partial name="~/Views/Shared/_NavMenu.cshtml" /> <!--Menu added as partial-->
     </header>
@@ -22,7 +20,7 @@
         </main>
     </div>
     <footer>
-            &copy; Lina Petersson
+            &copy; Lina Petersson 2023 | Webbutveckling med .NET - Moment 2
      </footer>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)

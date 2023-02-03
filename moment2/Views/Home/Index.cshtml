@@ -2,29 +2,32 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h2 class="display-4">Välkommen</h2>
+<section>
+    <h2>Välkommen</h2>
     <p>Välkommen till Träningsdagboken! Här kan du hålla kolla på dina avklarade träningspass</p>
     <div class="option-container">
-        <a asp-controller="Home" asp-action="Workout">
+        <a asp-controller="Home" asp-action="Workout" title="Lägg till träningspass">
             <div class="options">
                 <img src="~/add.png" />
                 <p>Lägg till avklarat träningspass</p>
             </div>
         </a>
-        <a asp-controller="Home" asp-action="Result">
+        <a asp-controller="Home" asp-action="Result" title="Se avklarade passs">
             <div class="options">
                 <img src="~/done.png" />
                 <p>Se dina tränade pass</p>
             </div>
         </a>
     </div>
-</div>
-
-<p>Hur många gånger vill du träna?</p>
-<form method="post">
-    <input type="number" name="amount" />
-    <input type="submit" value="Sätt mål" />
-</form>
-
-<p>@ViewBag.sessionContent</p>
+    <div class="goal">
+        <h3>Sätt ditt träningsmål</h3>
+        <form method="post">
+            <label for="amount">Hur många gånger vill du träna?</label>
+            <br />
+            <input type="number" name="amount" />
+            <input type="submit" value="Sätt mål" class="btn" />
+        </form>
+        <p>@ViewBag.sessionContent</p>
+        <a asp-controller="Home" asp-action="Result" class="link">Se dina tränade pass?</a>
+    </div>
+</section>

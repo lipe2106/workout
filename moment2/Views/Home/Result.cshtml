@@ -4,17 +4,20 @@
     int amount = 0;
 }
 
-<div class="text-center">
-    <h2 class="display-4">Tränade pass</h2>
-    <article>
+<section>
+    <h2>Tränade pass</h2>
+    <div class="workout-container">
         @foreach(var workout in Model)
         {
-            <h3>@workout.Date.ToString("yyyy/MM/dd")</h3>
-            <h4>@workout.Type [@workout.Duration minuter]</h4>
-            <p>@workout.Description</p>
-            <h5>Kändes @workout.Feel</h5>
+            <article>
+                <h3>@workout.Date.ToString("yyyy/MM/dd")</h3>
+                <h4>@workout.Type [@workout.Duration minuter]</h4>
+                <p>@workout.Description</p>
+                <h5>Kändes: @workout.Feel</h5>
+            </article>
             amount++;
         }
-    </article>
+    </div>
     <p>@ViewBag.sessionContent Du har tränat @amount gånger. Bra jobbat!</p>
-</div>
+    <a asp-controller="Home" asp-action="Workout" class="link">Lägg till fler pass?</a>
+</section>

@@ -1,16 +1,30 @@
 [
   {
     "Type": "Styrketräning",
-    "Description": "testat",
-    "Duration": 12,
+    "Description": "Tränat armar",
+    "Duration": 60,
     "Date": "2023-02-01T00:00:00",
     "Feel": "Utmärkt"
   },
   {
-    "Type": "Styrketräning",
-    "Description": "testat",
+    "Type": "Kondition",
+    "Description": "Promenad",
     "Duration": 45,
-    "Date": "2023-02-01T00:00:00",
+    "Date": "2023-02-02T00:00:00",
+    "Feel": "Bra"
+  },
+  {
+    "Type": "Styrketräning",
+    "Description": "Tränat ben",
+    "Duration": 75,
+    "Date": "2023-02-02T00:00:00",
+    "Feel": "Sådär"
+  },
+  {
+    "Type": "Kondition",
+    "Description": "Jympa",
+    "Duration": 50,
+    "Date": "2023-02-03T00:00:00",
     "Feel": "Bra"
   }
 ]
