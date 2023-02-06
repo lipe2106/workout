@@ -26,5 +26,12 @@
     "Duration": 50,
     "Date": "2023-02-03T00:00:00",
     "Feel": "Bra"
+  },
+  {
+    "Type": "Styrketräning",
+    "Description": "Tränat mage",
+    "Duration": 60,
+    "Date": "2023-02-06T00:00:00",
+    "Feel": "Bra"
   }
 ]

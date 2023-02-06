@@ -8,6 +8,8 @@
 body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-color: black;
+    width: 100%;
+    min-height: 100vh;
 }
 
 .header-container {
@@ -43,6 +45,7 @@ nav a:hover {
 
 .container {
     width: 80%;
+    min-height: 100vh;
     margin: auto;
     margin-top: 2%;
     background-color: white;
@@ -144,6 +147,7 @@ span {
     display: flex;
     flex-wrap: wrap;
 }
+
 article {
     border: 1px solid black;
     box-shadow: 1px 1px 3px dimgray;
@@ -186,5 +190,84 @@ article p {
 footer {
     background-color: darkcyan;
     margin-top: 2%;
+    margin-bottom: 0%;
     padding: 2%;
+    width: 100%;
+}
+
+
+/* Media queries */
+@media (max-width: 1050px) {
+
+    .logo {
+        width: 150px;
+        height: 150px;
+    }
+
+    .option-container a {
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 780px) {
+
+    h1 {
+        font-size: 8vw;
+    }
+
+    .logo {
+        width: 100px;
+        height: 100px;
+        margin: 10%;
+    }
+
+    nav {
+        top: 1.5%;
+    }
+
+    .container {
+        width: 95%;
+    }
+
+    .option-container {
+        width: 100%;
+    }
+
+    article {
+        width: 45%;
+    }
+
+@media (max-width: 570px) {
+
+    .logo {
+        width: 70px;
+        height: 70px;
+    }
+
+    h1 {
+        margin: 5%;
+    }
+
+    nav {
+        top: 0.5%;
+        font-size: 3vw;
+    }
+
+    .option-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        width: 80%;
+    }
+
+    .goal {
+        text-align: center;
+    }
+
+    article {
+        width: 80%;
+    }
+
+    footer {
+        font-size: 3vw;
+    }
 }
