@@ -16,20 +16,20 @@ namespace moment2.Controllers
         }
 
         [HttpGet]
-        [Route("/")]
-        [Route("/home")]
+        [Route("/")] // Self decided route to index
+        [Route("/home")] // Self decided route to index
         [Route("/index")]
-        [Route("/startsida")]
+        [Route("/startsida")] // Self decided route to index
         public IActionResult Index()
         {
             return View();
         }
 
-        [HttpPost]
-        [Route("/")]
-        [Route("/home")]
+        [HttpPost] // Handles input from index form
+        [Route("/")] // Self decided route to index
+        [Route("/home")] // Self decided route to index
         [Route("/index")]
-        [Route("/startsida")]
+        [Route("/startsida")] // Self decided route to index
         public IActionResult Index(string amount)
         {
             // Save input from set goal form in session variable
@@ -45,15 +45,15 @@ namespace moment2.Controllers
 
         [HttpGet]
         [Route("/workout")]
-        [Route("/träning")]
+        [Route("/träning")] // Self decided route to workout
         public IActionResult Workout()
         {
             return View();
         }
-
-        [HttpPost]
+         
+        [HttpPost] // Handles input from workout form
         [Route("/workout")]
-        [Route("/träning")]
+        [Route("/träning")] // Self decided route to workout
         public IActionResult Workout(WorkoutModel model)
         { 
             if(ModelState.IsValid)
@@ -80,7 +80,7 @@ namespace moment2.Controllers
 
         [HttpGet]
         [Route("/result")]
-        [Route("/resultat")]
+        [Route("/resultat")] // Self decided route to result
         public IActionResult Result()
         {
             // Get session variable and send to Result view

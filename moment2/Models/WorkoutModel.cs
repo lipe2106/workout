@@ -7,8 +7,8 @@ namespace moment2.Models
     {
         // Properties
 
-        [Required(ErrorMessage = "Du måste ange träningsform")]
-        [Display(Name = "Vilken typ av träning var det?")]
+        [Required(ErrorMessage = "Du måste ange träningsform")] // Error message to show in form
+        [Display(Name = "Vilken typ av träning var det?")] // Label to show in form
         public string? Type { get; set; }
 
         [Required(ErrorMessage = "Du måste ange beskrivning")]

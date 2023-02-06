@@ -1,4 +1,5 @@
-﻿@{
+﻿<!-- Print page title-->
+@{
     ViewData["Title"] = "Home Page";
 }
 
@@ -27,6 +28,6 @@
             <input type="number" name="amount" />
             <input type="submit" value="Sätt mål" class="btn" />
         </form>
-        <p>@ViewBag.sessionContent</p>
+        <p>@ViewBag.sessionContent</p><!-- Print session variable -->
     </div>
 </section>

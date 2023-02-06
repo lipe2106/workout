@@ -1,4 +1,6 @@
-﻿@model List<moment2.Models.WorkoutModel>
+﻿@model List<moment2.Models.WorkoutModel> // Include workout list based on model
+
+<!-- Print page title -->
 @{
     ViewData["Title"] = "Result";
     int amount = 0;
@@ -7,10 +9,10 @@
 <section>
     <h2>Tränade pass</h2>
     <div class="workout-container">
-        @foreach(var workout in Model)
+        @foreach(var workout in Model) // Loop through list and print as workout
         {
             <article>
-                <h3>@workout.Date.ToString("yyyy/MM/dd")</h3>
+                <h3>@workout.Date.ToString("yyyy/MM/dd")</h3> <!-- Print date without time-->
                 <h4>@workout.Type [@workout.Duration minuter]</h4>
                 <p>@workout.Description</p>
                 <h5>Kändes: @workout.Feel</h5>
@@ -18,6 +20,7 @@
             amount++;
         }
     </div>
-    <p>@ViewBag.sessionContent Du har tränat @amount gånger. Bra jobbat!</p>
+    <!-- Print session variable -->
+    <p>@ViewBag.sessionContent Du har tränat @amount gånger. Bra jobbat!</p> 
     <a asp-controller="Home" asp-action="Workout" class="link">Lägg till fler pass?</a>
 </section>
